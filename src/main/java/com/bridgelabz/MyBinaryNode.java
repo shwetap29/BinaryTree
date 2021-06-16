@@ -1,10 +1,13 @@
 package com.bridgelabz;
 
-public class MyBinaryNode<K> {
+public class MyBinaryNode<K extends Comparable<K>> {
+   K key;
     public MyBinaryNode<K> left;
     public MyBinaryNode<K> right;
-    public K key;
 
     public MyBinaryNode(K key) {
+        this.key = key;
+        this.left = null;
+        this.right = null;
     }
 }

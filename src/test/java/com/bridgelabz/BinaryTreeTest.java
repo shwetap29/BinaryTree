@@ -20,7 +20,9 @@ public class BinaryTreeTest {
         myBinaryTree.add(16);
         myBinaryTree.add(63);
         myBinaryTree.add(67);
+        int result = myBinaryTree.search(63);
         int size = myBinaryTree.getSize();
         Assertions.assertEquals(13,size);
+        Assertions.assertEquals(63,result);
     }
 }
